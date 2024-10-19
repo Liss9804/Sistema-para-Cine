@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/codigoImage"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/codigo"
+        android:contentDescription="Imagen de la Película 2"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="codigoImageClick"/> <!-- Corregido el error aquí -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Durante la Segunda Guerra Mundial, el genio inglés Alan Turing intenta descifrar el código alemán Enigma con la ayuda de otros matemáticos."
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buyTicketButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comprar Boleto"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/reserveTicketButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reservar Boleto"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

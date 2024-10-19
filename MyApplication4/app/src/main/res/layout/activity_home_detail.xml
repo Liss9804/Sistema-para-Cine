@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/movieImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/home"
+        android:contentDescription="Imagen de la Película 1"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Después de que una raza alienígena llamada Boov conquista la Tierra, toda la población es reubicada,
+         todos excepto una niña llamada Tip que se las ha arreglado para esconderse de los extraterrestres.
+          Cuando Tip se encuentra con un Boov fugitivo llamado Oh la desconfianza será mutua. Sin embargo,
+          Oh no es como el resto de los Boov, él sólo quiere tener amigos y divertirse. Pronto ambos emprenden la búsqueda de la madre de Tip, sin saber que los Gorg, enemigos de los Boov, están de camino."
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buyTicketButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comprar Boleto"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/reserveTicketButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reservar Boleto"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

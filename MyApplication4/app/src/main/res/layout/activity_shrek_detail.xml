@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/movieImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/shrek"
+        android:contentDescription="Imagen de la Película 2"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hace mucho tiempo, en una lejana ciénaga, vivía un ogro llamado Shrek. Un día, su preciada soledad se ve interrumpida por un montón de personajes de cuento de hadas que invaden su casa. Todos fueron desterrados de su reino por el malvado Lord Farquaad. Decidido a devolverles su reino y recuperar la soledad de su ciénaga, Shrek llega a un acuerdo con Lord Farquaad y va a rescatar a la princesa Fiona, la futura esposa del rey. Sin embargo, la princesa esconde un oscuro secreto."
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buyTicketButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comprar Boleto"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/reserveTicketButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reservar Boleto"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

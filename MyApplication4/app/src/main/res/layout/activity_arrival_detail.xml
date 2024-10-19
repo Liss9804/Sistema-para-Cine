@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/arrivalImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/arrival"
+        android:contentDescription="Imagen de la Película 2"
+        android:layout_marginEnd="10dp"
+        android:scaleType="fitCenter"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="arrivalImageClick"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="El gobierno contrata a la prestigiosa lingüista Louise Banks para que se comunique con unos alienígenas que han llegado a la Tierra. Conforme ella aprende su idioma, va experimentando regresiones muy intensas que desvelan la verdadera misión que les ha llevado hasta nuestro planeta."
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buyTicketButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Comprar Boleto"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/reserveTicketButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reservar Boleto"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Películas aptas para todo público"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:onClick="onnoseaceptaImageClick">
+
+                <ImageView
+                    android:id="@+id/noseaceptaImage"
+                    android:layout_width="150dp"
+                    android:layout_height="225dp"
+                    android:src="@drawable/noseacepta"
+                    android:contentDescription="Poster de la película No se aceptan devoluciones"
+                    android:layout_marginEnd="10dp"
+                    android:scaleType="fitCenter"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NO SE ACEPTAN DEVOLUCIONES"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+            <!-- Película 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="extraordinarioImageClick">
+
+                <ImageView
+                    android:id="@+id/extraordinarioImage"
+                    android:layout_width="150dp"
+                    android:layout_height="225dp"
+                    android:src="@drawable/extraordinario"
+                    android:contentDescription="Poster de la película Extraordinario"
+                    android:layout_marginEnd="10dp"
+                    android:scaleType="fitCenter"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="EXTRAORDINARIO"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

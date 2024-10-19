@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ExtraText">
+
+    <!-- Imagen de fondo -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/reset" />
+
+    <!-- Título de selección de categoría -->
+    <TextView
+        android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Selecciona una categoría"
+    android:textSize="24sp"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="40dp"
+    android:textColor="@android:color/white" />
+
+    <!-- Botón para Niños -->
+    <Button
+        android:id="@+id/childrenButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Niños"
+        android:layout_below="@id/textView"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@color/transparentGray"
+    android:textColor="@android:color/white" />
+
+    <!-- Botón para Adultos -->
+    <Button
+        android:id="@+id/adultsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adultos"
+        android:layout_below="@id/childrenButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/transparentGray"
+        android:textColor="@android:color/white" />
+
+    <!-- Botón para Todo Público -->
+    <Button
+        android:id="@+id/allPublicButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apto para Todo Público"
+        android:layout_below="@id/adultsButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/transparentGray"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
